@@ -2300,6 +2300,9 @@ header {
   .skeaper_items .speaker_item::before, .skeaper_items .speaker_item::after {
     display: none;
   }
+  .skeaper_items .speaker_item .img_block {
+    height: 240px;
+  }
 }
 @media (max-width: 576px) {
   .section_container {

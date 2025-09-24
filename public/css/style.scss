@@ -1751,6 +1751,9 @@ header{
             &::before, &::after{
                 display: none;
             }
+            .img_block{
+                height: 240px;
+            }
         }
     }
 }

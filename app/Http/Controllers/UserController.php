@@ -30,9 +30,9 @@ class UserController extends Controller
             'phone' => 'required|string',
         ]);
 
-        // Мэдээлэл хадгалах (жишээ нь users хүснэгтэд)
+        // Мэдээлэл хадгалах (жишээ нь members хүснэгтэд)
         Member::create($validated);
 
-        return redirect('/')->with('toast', ['type' => 'success', 'message' => 'Амжилттай устгалаа']);
+        return redirect('/')->with('toast', ['type' => 'success', 'message' => 'Амжилттай хадгаллаа']);
     }
 }
