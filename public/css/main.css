@@ -1,0 +1,502 @@
+@font-face {
+  font-family: "sf";
+  font-weight: 400;
+  src: url(../fonts/SF-Pro-Rounded-Regular.otf) format("opentype"), url(../fonts/SF-Pro-Rounded-Regular.otf) format("opentype");
+}
+@font-face {
+  font-family: "sf";
+  font-weight: 500;
+  src: url(../fonts/SF-Pro-Rounded-Medium.otf) format("opentype"), url(../fonts/SF-Pro-Rounded-Medium.otf) format("opentype");
+}
+@font-face {
+  font-family: "sf";
+  font-weight: 600;
+  src: url(../fonts/SF-Pro-Rounded-Semibold.otf) format("opentype"), url(../fonts/SF-Pro-Rounded-Semibold.otf) format("opentype");
+}
+@font-face {
+  font-family: "sf";
+  font-weight: 700;
+  src: url(../fonts/SF-Pro-Rounded-Bold.otf) format("opentype"), url(../fonts/SF-Pro-Rounded-Bold.otf) format("opentype");
+}
+@font-face {
+  font-family: "sf";
+  font-weight: 800;
+  src: url(../fonts/SF-Pro-Rounded-Black.otf) format("opentype"), url(../fonts/SF-Pro-Rounded-Black.otf) format("opentype");
+}
+@font-face {
+  font-family: "fontIcon";
+  font-weight: 500;
+  src: url("../fonts/icon/font.eot");
+  src: url("../fonts/icon/font.eot") format("embedded-opentype"), url("../fonts/icon/font.woff") format("woff"), url("../fonts/icon/font.ttf") format("truetype"), url("../fonts/icon/font.svg#svgFontName") format("svg");
+}
+/* Size */
+/* Size End */
+/* Color */
+:root {
+  --backgroundColor: #f4f6f9;
+  --primaryColor: #0068f7;
+  --primaryHoverColor: #0055cc;
+  --secondColor: #e54041;
+  --secondColorHover: #cd3131;
+  --hospitalColor: #109361;
+  --boxBorder: #dcdfe6;
+  --borderColor: #adbcd5;
+  --borderActiveColor: #a8b0c1;
+  --labelColor: #727988;
+  --inputBorder: #cecfdb;
+  --inputBorderHover: #a0a2a8;
+  --lborderColor: #dfe4eb;
+  --baseSecondColor: #454c58;
+  --formHeader: #becde0;
+  --formBorder: #a1afc7;
+  --formInBack: #f9f9f9;
+  --baseColor: #1b1a1d;
+  --baseColorHover: #111012;
+  --tableColor: #252F48;
+  --tableBorder: #e1e1e1;
+  --baseTextColor: #464d58;
+  --baseTextActiveColor: #2d333f;
+  --fbColor: #0866FF;
+  --twColor: #08a0e9;
+  --statusPrimaryColor: #1b84ff;
+  --statusPrimaryBg: #e9f3ff;
+  --statusDangerColor: #f8285a;
+  --statusDangerBg: #ffeef3;
+  --statusWaitingColor: #af6800;
+  --statusWaitingBg: #ffeac6;
+  --statusSuccessColor: #09752f;
+  --statusSuccessBg: #d5eedf;
+  --inputBg: #f1f3f4;
+  --textColor: #666;
+  --grayText: #858585;
+  --lgrayColor: #f4f5f6;
+  --checkradioBg: #f3f5f6;
+  --switchBg: #f0f2f3;
+  --itemBorder: #ebecef;
+  --boxBg: #f5f7ff;
+  --lineBg: #dbe2eb;
+  --grayColor: #b3bdc8;
+  --grayColorHover: #9da9b6;
+  --lightGrayColor: #eceff3;
+}
+
+/* Color End */
+html {
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  overflow-x: hidden;
+  line-height: 1.5;
+  -webkit-text-size-adjust: 100%;
+  -moz-tab-size: 4;
+  -o-tab-size: 4;
+  tab-size: 4;
+  clear: both;
+  vertical-align: baseline;
+  font-family: "sf";
+  font-feature-settings: normal;
+  font-variation-settings: normal;
+  background-color: #fff;
+  scroll-behavior: smooth;
+  --cursor-color: #eefff6af;
+  --cursor-hover: #02d866;
+}
+
+@keyframes grain {
+  0%, 100% {
+    transform: translate(0);
+  }
+  10% {
+    transform: translate(-5%, -10%);
+  }
+  20% {
+    transform: translate(-15%, 5%);
+  }
+  30% {
+    transform: translate(7%, -25%);
+  }
+  40% {
+    transform: translate(-5%, 25%);
+  }
+  50% {
+    transform: translate(-15%, 10%);
+  }
+  60% {
+    transform: translate(15%);
+  }
+  70% {
+    transform: translateY(15%);
+  }
+  80% {
+    transform: translate(3%, 35%);
+  }
+  90% {
+    transform: translate(-10%, 10%);
+  }
+}
+body {
+  min-height: 100%;
+  font-size: 14px;
+  font-family: "sf";
+  color: black;
+  line-height: 1.4;
+  font-weight: 400;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  background-size: cover;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: var(--textColor);
+  font-size: 14px;
+  text-decoration: none;
+}
+a:hover {
+  color: var(--baseColor);
+  text-decoration: none;
+}
+
+a, abbr, acronym, address, applet, b, big, blockquote, body, center, cite, code, dd, del, dfn, div, dl, dt, em, fieldset, form, h1, h2, h3, h4, h5, h6, html, i, iframe, img, ins, kbd, label, legend, li, object, ol, p, pre, q, s, samp, small, span, strike, strong, sub, sup, tt, u, ul, var {
+  vertical-align: baseline;
+  padding: 0;
+  margin: 0;
+}
+
+p {
+  font-weight: 400;
+  line-height: 1.4;
+}
+p ~ p {
+  margin-top: 20px;
+}
+
+button {
+  font-family: "sf";
+}
+
+/* Other Style */
+.clear-fix {
+  display: block;
+  clear: both;
+}
+
+.clear-fix::after {
+  content: ".";
+  display: block;
+  height: 0;
+  font-size: 0;
+  line-height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+*, *:after, *:before {
+  box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*, *:focus, *:active {
+  -ms-box-sizing: border-box;
+  -khtml-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.grid {
+  display: grid;
+  width: 100%;
+}
+
+.dgc {
+  align-items: center;
+}
+
+.aic {
+  align-items: center;
+}
+
+.grid_col2 {
+  grid-template-columns: 1fr 1fr;
+}
+
+.grid_col3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid_col4 {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.grid_col5 {
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.grid_col6 {
+  grid-template-columns: repeat(6, 1fr);
+}
+
+.grid_col8 {
+  grid-template-columns: repeat(8, 1fr);
+}
+
+.grid_col9 {
+  grid-template-columns: repeat(9, 1fr);
+}
+
+.grid_col10 {
+  grid-template-columns: repeat(10, 1fr);
+}
+
+.grid_col12 {
+  grid-template-columns: repeat(12, 1fr);
+}
+
+.grid_col50_50 {
+  grid-template-columns: 50% 50%;
+}
+
+.gc1 {
+  grid-column: 1/3;
+}
+
+.gap1 {
+  gap: 10px;
+}
+
+.gap1_2 {
+  gap: 12px;
+}
+
+.gap1_6 {
+  gap: 16px;
+}
+
+.gap2 {
+  gap: 20px;
+}
+
+.gap2_4 {
+  gap: 24px;
+}
+
+.gap3 {
+  gap: 30px;
+}
+
+.gap4 {
+  gap: 40px;
+}
+
+.gap5 {
+  gap: 50px;
+}
+
+.df {
+  display: flex;
+}
+
+.dfc {
+  display: flex;
+  align-items: center;
+}
+
+.dtb {
+  display: table;
+}
+
+.dfs {
+  display: flex;
+  align-items: flex-start;
+}
+
+.dcsb {
+  display: flex !important;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.dcsa {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.dfcc {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.afe {
+  align-items: flex-end !important;
+}
+
+.jce {
+  justify-content: flex-end !important;
+}
+
+.txws {
+  display: block;
+  white-space: nowrap;
+}
+
+.pf {
+  position: fixed !important;
+}
+
+.pr {
+  position: relative !important;
+}
+
+.pa {
+  position: absolute !important;
+}
+
+.pa_cc {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.w10 {
+  width: 100%;
+}
+
+.p_5 {
+  padding: 5px;
+}
+
+.p1 {
+  padding: 10px;
+}
+
+.pl_5 {
+  padding-left: 5px;
+}
+
+.pl1 {
+  padding-left: 10px;
+}
+
+.pr_5 {
+  padding-right: 5px;
+}
+
+.pt1 {
+  padding-top: 10px !important;
+}
+
+.pb1 {
+  padding-bottom: 10px !important;
+}
+
+.pb_5 {
+  padding-bottom: 5px !important;
+}
+
+.mt_5 {
+  margin-top: 5px;
+}
+
+.mt1 {
+  margin-top: 10px !important;
+}
+
+.mt1_6 {
+  margin-top: 16px;
+}
+
+.mt2 {
+  margin-top: 20px;
+}
+
+.mt3 {
+  margin-top: 30px !important;
+}
+
+.mr_t {
+  margin-right: 5px;
+}
+
+.mr_5 {
+  margin-right: 5px;
+}
+
+.mr1 {
+  margin-right: 10px;
+}
+
+.mr2 {
+  margin-right: 20px;
+}
+
+.ml_5 {
+  margin-left: 5px;
+}
+
+.ml1 {
+  margin-left: 10px;
+}
+
+.ml1_6 {
+  margin-left: 16px;
+}
+
+.ml2 {
+  margin-left: 20px;
+}
+
+.mb_5 {
+  margin-bottom: 5px;
+}
+
+.mb1 {
+  margin-bottom: 10px;
+}
+
+.mb2 {
+  margin-bottom: 20px;
+}
+
+.m0 {
+  margin: 0 !important;
+}
+
+/* Main Style */
+.container {
+  margin: 0 auto;
+  width: 1220px;
+  transition: all 0.1s ease-in;
+  box-sizing: border-box;
+}
+
+.widget {
+  width: 360px;
+}
+
+.full_container {
+  margin: 0 auto;
+  max-width: 1280px;
+  transition: all 0.1s ease-in;
+  box-sizing: border-box;
+}
+
+::-moz-selection {
+  color: #fff;
+  background-color: var(--primaryColor);
+}
+
+::selection {
+  color: #fff;
+  background-color: var(--primaryColor);
+}
+
+/* Main Style End *//*# sourceMappingURL=main.css.map */

@@ -1,0 +1,31 @@
+@font-face {
+  font-family: "sf";
+  font-weight: 400;
+  src: url(../fonts/SF-Pro-Rounded-Regular.otf) format("opentype"), url(../fonts/SF-Pro-Rounded-Regular.otf) format("opentype");
+}
+@font-face {
+  font-family: "sf";
+  font-weight: 500;
+  src: url(../fonts/SF-Pro-Rounded-Medium.otf) format("opentype"), url(../fonts/SF-Pro-Rounded-Medium.otf) format("opentype");
+}
+@font-face {
+  font-family: "sf";
+  font-weight: 600;
+  src: url(../fonts/SF-Pro-Rounded-Semibold.otf) format("opentype"), url(../fonts/SF-Pro-Rounded-Semibold.otf) format("opentype");
+}
+@font-face {
+  font-family: "sf";
+  font-weight: 700;
+  src: url(../fonts/SF-Pro-Rounded-Bold.otf) format("opentype"), url(../fonts/SF-Pro-Rounded-Bold.otf) format("opentype");
+}
+@font-face {
+  font-family: "sf";
+  font-weight: 800;
+  src: url(../fonts/SF-Pro-Rounded-Black.otf) format("opentype"), url(../fonts/SF-Pro-Rounded-Black.otf) format("opentype");
+}
+@font-face {
+  font-family: "fontIcon";
+  font-weight: 500;
+  src: url("../fonts/icon/font.eot");
+  src: url("../fonts/icon/font.eot") format("embedded-opentype"), url("../fonts/icon/font.woff") format("woff"), url("../fonts/icon/font.ttf") format("truetype"), url("../fonts/icon/font.svg#svgFontName") format("svg");
+}/*# sourceMappingURL=fonts.css.map */

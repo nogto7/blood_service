@@ -1,0 +1,82 @@
+/* Color */
+:root{
+    --backgroundColor: #f4f6f9;
+
+    --primaryColor: #0068f7;
+    --primaryHoverColor: #0055cc;
+
+    --secondColor: #e54041;
+    --secondColorHover: #cd3131;
+
+    --hospitalColor: #109361;
+
+    --boxBorder: #dcdfe6;
+    --borderColor: #adbcd5;
+    --borderActiveColor: #a8b0c1;
+    --labelColor: #727988;
+    --inputBorder: #cecfdb;
+    --inputBorderHover: #a0a2a8;
+    --lborderColor: #dfe4eb;
+
+    --baseSecondColor: #454c58;
+
+    --formHeader: #becde0;
+    --formBorder: #a1afc7;
+    --formInBack: #f9f9f9;
+
+    --baseColor: #1b1a1d;
+    --baseColorHover: #111012;
+    --tableColor: #252F48;
+    --tableBorder: #e1e1e1;
+
+    --baseTextColor: #464d58;
+    --baseTextActiveColor: #2d333f;
+
+    --fbColor: #0866FF;
+    --twColor: #08a0e9;
+
+    --statusPrimaryColor: #1b84ff;
+    --statusPrimaryBg: #e9f3ff;
+
+    --statusDangerColor: #f8285a;
+    --statusDangerBg: #ffeef3;
+
+    --statusWaitingColor: #af6800;
+    --statusWaitingBg: #ffeac6;
+
+    --statusSuccessColor: #09752f;
+    --statusSuccessBg: #d5eedf;
+
+    --inputBg: #f1f3f4;
+
+    --textColor: #666;
+    --grayText: #858585;
+
+    --lgrayColor: #f4f5f6;
+    --checkradioBg: #f3f5f6;
+    --switchBg: #f0f2f3;
+
+    --itemBorder: #ebecef;
+
+    --boxBg: #f5f7ff;
+
+    --lineBg: #dbe2eb;
+
+    --grayColor: #b3bdc8;
+    --grayColorHover: #9da9b6;
+
+    --lightGrayColor: #eceff3;
+}
+
+$headerLinkColor: #b1b7bf;
+$tertiaryColor: #78829D;
+$tertiaryHoverColor: #5c677a;
+$backgroundLightColor: #f1f4f5;
+$errorColor: #d0021b;
+
+$descriptionColor: #495460;
+$stepColor: var(--primaryColor);
+$borderColor:var(--primaryColor);
+
+$wh: #fff;
+/* Color End */
