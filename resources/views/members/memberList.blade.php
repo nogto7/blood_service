@@ -3,7 +3,7 @@
 @section('content')
 <div class="section_container">
     <div class="section_line">
-        <h2 class="title">Гишүүдийн жагсаалт</h2>
+        <h2 class="title">Гишүүдийн жагсаалт ({{ $members->total() }})</h2>
         <div class="table_wrap">
             <table class="table_content">
                 <thead>
@@ -44,6 +44,7 @@
                 </tbody>
             </table>
         </div>
+        {{ $members->links() }}
     </div>
 </div>
 @endsection

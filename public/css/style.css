@@ -2187,6 +2187,36 @@ header {
   background: url("../images/icon-info.svg") no-repeat center center;
 }
 
+nav {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.pagination .page-item .page-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 26px;
+  padding: 5px 10px;
+  border-radius: 20px;
+}
+.pagination .page-item .page-link:hover {
+  background-color: var(--backgroundColor);
+}
+.pagination .page-item ~ .page-item {
+  margin-left: 4px;
+}
+.pagination .page-item.active .page-link {
+  color: #fff;
+  background-color: var(--baseTextColor);
+}
+
 /* Body Style End */
 /* Footer Style */
 .footer_wrap {

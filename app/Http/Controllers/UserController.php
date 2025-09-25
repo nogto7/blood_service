@@ -12,7 +12,8 @@ use Illuminate\Support\Facades\DB;
 class UserController extends Controller
 {
     public function index(){
-        $members = DB::table('members as m')->leftJoin('organizations as o', 'm.workplace', 'o.id')->select('m.*', 'o.name as workplace_name')->get();
+        $members = DB::table('members as m')->leftJoin('organizations as o', 'm.workplace', 'o.id')->select('m.*', 'o.name as workplace_name')->paginate(15);
+
         return view('members.memberList', compact('members'));
     }
 

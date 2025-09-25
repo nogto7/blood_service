@@ -1620,6 +1620,39 @@ header{
         }
     }
 }
+
+nav{
+    display: $fl;
+    justify-content: $c;
+    margin-top: $s1;
+}
+.pagination{
+    display: $fl;
+    align-items: $c;
+    justify-content: $c;
+    .page-item{
+        .page-link{
+            display: $fl;
+            align-items: $c;
+            justify-content: $c;
+            height: $s2_6;
+            padding: $s_5 $s1;
+            border-radius: $s2;
+            &:hover{
+                background-color: var(--backgroundColor);
+            }
+        }
+        & ~ .page-item{
+            margin-left: $s_4;
+        }
+        &.active{
+            .page-link{
+                color: $wh;
+                background-color: var(--baseTextColor);
+            }
+        }
+    }
+}
 /* Body Style End */
 
 /* Footer Style */
