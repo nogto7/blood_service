@@ -9,3 +9,6 @@ Route::get('/', function () {
 
 Route::get('/register', [UserController::class, 'create']);
 Route::post('/saveUser', [UserController::class, 'store']);
+
+// Member list view
+Route::get('/members', [UserController::class, 'index']);

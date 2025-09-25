@@ -1406,6 +1406,10 @@ header{
         width: max-content;
     }
 }
+.firstname{
+    display: inline-block;
+    text-transform: uppercase;
+}
 .border_left{
     border-left: 1px solid var(--borderColor) !important;
 }

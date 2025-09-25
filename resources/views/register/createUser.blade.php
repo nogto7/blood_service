@@ -35,7 +35,8 @@
             </div>
             <div class="form_item">
                 <label class="form_label">Салбар төвийн нэр</label>
-                <select name="workplace" id="" class="form_select">
+                <select name="workplace" id="" class="form_select" required>
+                    <option value="">Сонгох</option>
                     <option value="1">ЦССҮТ</option>
                     <option value="2">Архангай ЦСТ</option>
                     <option value="3">Багануур ЦСТ</option>
